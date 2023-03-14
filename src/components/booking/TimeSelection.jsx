@@ -1,6 +1,12 @@
+import CalendarView from "./timeSelection/CalendarView"
+
 function TimeSelection() {
   return (
-    <div>TimeSelection</div>
+    <section id="time-selection">
+      <h3>Time Selection</h3>
+      <CalendarView />
+    </section>
+    
   )
 }
 
