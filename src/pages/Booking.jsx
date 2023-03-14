@@ -9,7 +9,7 @@ function Booking() {
       <VehicleType />
       <ServiceType />
       <TimeSelection />
-      <BookingFooter />
+      <BookingFooter price={160}/>
     </div>
   )
 }

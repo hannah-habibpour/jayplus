@@ -1,6 +1,12 @@
-function BookingFooter() {
+import Button from "../shared/all/Button"
+
+function BookingFooter({ price }) {
   return (
-    <div>BookingFooter</div>
+    <section id="booking-footer">
+      <div>price: ${price}</div>
+      <Button>Payment</Button>
+      
+    </section>
   )
 }
 
