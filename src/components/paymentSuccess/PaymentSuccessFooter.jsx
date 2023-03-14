@@ -1,6 +1,11 @@
+import Button from "../shared/all/Button"
+
 function PaymentSuccessFooter() {
   return (
-    <div>PaymentSuccessFooter</div>
+    <section id="payment-success-footer">
+      <Button>Back to Home</Button>
+    </section>
+   
   )
 }
 
