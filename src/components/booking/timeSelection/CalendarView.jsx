@@ -3,10 +3,11 @@ import DayColumnList from "./DayColumnList"
 
 function CalendarView() {
   return (
-    <div>
+    <div className="flex w-full justify-between">
     <UpdateDayButton children='Backward'/>
-    <UpdateDayButton children='Forward'/>
     <DayColumnList />
+    <UpdateDayButton children='Forward'/>
+    
     </div>
   )
 }
