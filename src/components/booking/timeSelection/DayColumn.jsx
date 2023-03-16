@@ -1,8 +1,12 @@
-import React from 'react'
+import DayColumnHeader from './DayColumnHeader'
+import TimeSlotButtonList from './TimeSlotButtonList'
 
-function DayColumn({date}) {
+function DayColumn({date, time}) {
   return (
-    <div>{date}</div>
+    <div>
+        <DayColumnHeader date={date} />
+        <TimeSlotButtonList time={time} />
+    </div>
   )
 }
 
