@@ -7,10 +7,10 @@ function VehicleType() {
   const vehicleTypes = {
     name : "vehicle-types",
     types: [
-    {id : "Sedan", name: "Sedan"},
-    {id : "SUV", name: "SUV"}, 
-    {id : "Large-SUV-Truck", name: "Large SUV / Truck"},
-    {id : "Motorcycle", name: "Motorcycle"}]
+    {id : "Sedan", name: "Sedan", description: "Any 5-seater sedan, any hatchback, any two or mini car"},
+    {id : "SUV", name: "SUV", description: "Any 5 seater SUV"}, 
+    {id : "Large-SUV-Truck", name: "Large SUV / Truck", description: "Any 6, 7, or 8 seater, minivan or van, pickup truck"},
+    {id : "Motorcycle", name: "Motorcycle", description: "Any motorcycle"}]
   }
 
   const [ vehicleType, setvehicleType ] = useState("")
