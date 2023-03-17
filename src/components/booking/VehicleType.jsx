@@ -4,14 +4,21 @@ import TypeDescription from "./shared/TypeDescription"
 
 function VehicleType() {
   
-  const vehicleTypes = [{id : 0, name: "Sedan"}, {id : 1, name: "SUV"}, {id : 2, name: "Large SUV / Truck"}, {id : 3, name: "Motorcycle"}]
+  const vehicleTypes = {
+    name : "vehicle-types",
+    types: [
+    {id : "Sedan", name: "Sedan"},
+    {id : "SUV", name: "SUV"}, 
+    {id : "Large-SUV-Truck", name: "Large SUV / Truck"},
+    {id : "Motorcycle", name: "Motorcycle"}]
+  }
 
-  const [ type, setType ] = useState("")
+  const [ vehicleType, setvehicleType ] = useState("")
 
   return (
     <section id="vehicle-type">
       <h3>Vehicle Type</h3>
-      <TypeList types={vehicleTypes} select={(type) => setType(type)} />
+      <TypeList types={vehicleTypes} select={(type) => setvehicleType(type)} />
       <TypeDescription />
     </section>
   )
