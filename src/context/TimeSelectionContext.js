@@ -3,7 +3,7 @@ import { createContext, useState } from "react"
 const TimeSelectionContext = createContext()
 
 export const TimeSelectionProvidor = ({ children }) => {
-    const [ dateTimeSelected, setDateTimeSelected ] = useState("2023-01-2009:00")
+    const [ dateTimeSelected, setDateTimeSelected ] = useState("")
 
     const handleChange = (e) => {
         setDateTimeSelected(e.currentTarget.value)

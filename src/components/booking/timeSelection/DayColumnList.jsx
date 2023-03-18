@@ -202,8 +202,8 @@ function DayColumnList() {
 
   return (
     <div className="grid grid-cols-3 gap-2 w-full justify-between text-center">  
-        {Object.entries(dateTimeList).map(([key, value]) =>  (
-            <DayColumn key={key} date={key} timeSlotList={value}/>
+        {Object.entries(dateTimeList).map(([key, value]) => (
+            <DayColumn key={key} date={key} timeSlotList={value} />
         ))}
     </div>
   )
