@@ -1,19 +1,16 @@
-import { useState } from "react"
-
+import { useContext } from "react"
+import TimeSelectionContext from "../../../context/TimeSelectionContext"
 
 function TimeSlotButtonList({ date, timesSlotList }) {
-  const [selected, setSelected] = useState("")
 
-  const handleChange = (e) => {
-    setSelected(e.currentTarget.value)
-  }
+  const {dateTimeSelected, handleChange} = useContext(TimeSelectionContext)
 
   return (
     <div>
       <ul>
         {timesSlotList.map( time => (
           <li key={date + time.start}>
-            <input type="radio" id={date + time.start} name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ selected === date + time.start} />
+            <input type="radio" id={date + time.start} name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ dateTimeSelected === date + time.start} />
             <label htmlFor={date + time.start}>{time.start}</label>
           </li>
         ))}
