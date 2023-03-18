@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import TimeSelectionContext from "../../../context/TimeSelectionContext"
+import BookingContext from "../../../context/BookingContext"
 
 function TimeSlotButtonList({ date, timesSlotList }) {
 
-  const {dateTimeSelected, handleChange} = useContext(TimeSelectionContext)
+  const {dateTimeSelected, handleChange} = useContext(BookingContext)
 
   return (
     <div>
