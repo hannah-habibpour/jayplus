@@ -4,64 +4,64 @@ function DayColumnList() {
   const dateTimeList = {
     "2023-01-20": [
         {
-            "start": "2023-01-20T09:00:00.000000Z",
-            "end": "2023-01-20T10:00:00.000000Z",
+            "start": "09:00",
+            "end": "10:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T10:00:00.000000Z",
-            "end": "2023-01-20T11:00:00.000000Z",
+            "start": "10:00",
+            "end": "11:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T11:00:00.000000Z",
-            "end": "2023-01-20T12:00:00.000000Z",
+            "start": "11:00",
+            "end": "12:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T12:00:00.000000Z",
-            "end": "2023-01-20T13:00:00.000000Z",
+            "start": "12:00",
+            "end": "13:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T13:00:00.000000Z",
-            "end": "2023-01-20T14:00:00.000000Z",
+            "start": "13:00",
+            "end": "14:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T14:00:00.000000Z",
-            "end": "2023-01-20T15:00:00.000000Z",
+            "start": "14:00",
+            "end": "15:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T15:00:00.000000Z",
-            "end": "2023-01-20T16:00:00.000000Z",
+            "start": "15:00",
+            "end": "16:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T16:00:00.000000Z",
-            "end": "2023-01-20T17:00:00.000000Z",
+            "start": "16:00",
+            "end": "17:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-20T17:00:00.000000Z",
-            "end": "2023-01-20T18:00:00.000000Z",
+            "start": "17:00",
+            "end": "18:00",
             "freeMinutes": 180,
             "available": false,
             "isPast": true
@@ -69,64 +69,64 @@ function DayColumnList() {
     ],
     "2023-01-21": [
         {
-            "start": "2023-01-21T09:00:00.000000Z",
-            "end": "2023-01-21T10:00:00.000000Z",
+            "start": "09:00",
+            "end": "10:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T10:00:00.000000Z",
-            "end": "2023-01-21T11:00:00.000000Z",
+            "start": "10:00",
+            "end": "11:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T11:00:00.000000Z",
-            "end": "2023-01-21T12:00:00.000000Z",
+            "start": "11:00",
+            "end": "12:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T12:00:00.000000Z",
-            "end": "2023-01-21T13:00:00.000000Z",
+            "start": "12:00",
+            "end": "13:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T13:00:00.000000Z",
-            "end": "2023-01-21T14:00:00.000000Z",
+            "start": "13:00",
+            "end": "14:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T14:00:00.000000Z",
-            "end": "2023-01-21T15:00:00.000000Z",
+            "start": "14:00",
+            "end": "15:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T15:00:00.000000Z",
-            "end": "2023-01-21T16:00:00.000000Z",
+            "start": "15:00",
+            "end": "16:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T16:00:00.000000Z",
-            "end": "2023-01-21T17:00:00.000000Z",
+            "start": "16:00",
+            "end": "17:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-21T17:00:00.000000Z",
-            "end": "2023-01-21T18:00:00.000000Z",
+            "start": "17:00",
+            "end": "18:00",
             "freeMinutes": 180,
             "available": false,
             "isPast": true
@@ -134,64 +134,64 @@ function DayColumnList() {
     ],
     "2023-01-22": [
         {
-            "start": "2023-01-22T09:00:00.000000Z",
-            "end": "2023-01-22T10:00:00.000000Z",
+            "start": "09:00",
+            "end": "10:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T10:00:00.000000Z",
-            "end": "2023-01-22T11:00:00.000000Z",
+            "start": "10:00",
+            "end": "11:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T11:00:00.000000Z",
-            "end": "2023-01-22T12:00:00.000000Z",
+            "start": "11:00",
+            "end": "12:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T12:00:00.000000Z",
-            "end": "2023-01-22T13:00:00.000000Z",
+            "start": "12:00",
+            "end": "13:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T13:00:00.000000Z",
-            "end": "2023-01-22T14:00:00.000000Z",
+            "start": "13:00",
+            "end": "14:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T14:00:00.000000Z",
-            "end": "2023-01-22T15:00:00.000000Z",
+            "start": "14:00",
+            "end": "15:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T15:00:00.000000Z",
-            "end": "2023-01-22T16:00:00.000000Z",
+            "start": "15:00",
+            "end": "16:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T16:00:00.000000Z",
-            "end": "2023-01-22T17:00:00.000000Z",
+            "start": "16:00",
+            "end": "17:00",
             "freeMinutes": 270,
             "available": false,
             "isPast": true
         },
         {
-            "start": "2023-01-22T17:00:00.000000Z",
-            "end": "2023-01-22T18:00:00.000000Z",
+            "start": "17:00",
+            "end": "18:00",
             "freeMinutes": 180,
             "available": false,
             "isPast": true
@@ -199,11 +199,12 @@ function DayColumnList() {
     ]
   }
 
+
   return (
-    <div className="grid grid-cols-3 gap-2 w-full justify-between text-center">
-        <DayColumn date='2023-01-20' time='00:00'/>
-        <DayColumn date='2023-01-21' time='00:00'/>
-        <DayColumn date='2023-01-22' time='00:00'/>
+    <div className="grid grid-cols-3 gap-2 w-full justify-between text-center">  
+        {Object.entries(dateTimeList).map(([key, value]) =>  (
+            <DayColumn key={key} date={key} timeSlotList={value}/>
+        ))}
     </div>
   )
 }

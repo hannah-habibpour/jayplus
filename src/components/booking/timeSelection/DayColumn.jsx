@@ -1,11 +1,11 @@
 import DayColumnHeader from './DayColumnHeader'
 import TimeSlotButtonList from './TimeSlotButtonList'
 
-function DayColumn({date, time}) {
+function DayColumn({date, timeSlotList}) {
   return (
     <div>
         <DayColumnHeader date={date} />
-        <TimeSlotButtonList time={time} />
+        <TimeSlotButtonList date={date} timesSlotList={timeSlotList} />
     </div>
   )
 }
