@@ -1,6 +1,6 @@
-function TypeDescription() {
+function TypeDescription({ description }) {
   return (
-    <div>TypeDescription</div>
+    <div>{description}</div>
   )
 }
 

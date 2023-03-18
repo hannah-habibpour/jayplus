@@ -15,11 +15,20 @@ function VehicleType() {
 
   const [ vehicleType, setvehicleType ] = useState("")
 
+  const getDescription = () => {
+    const matchingType = vehicleTypes.types.find(t => t.name === vehicleType);
+    return matchingType ? matchingType.description : "No description found.";
+  }
+
   return (
     <section id="vehicle-type">
       <h3>Vehicle Type</h3>
-      <TypeList types={vehicleTypes} select={(type) => setvehicleType(type)} />
-      <TypeDescription />
+      <TypeList 
+        types={vehicleTypes}
+        select={(type) => {
+          setvehicleType(type)
+        }} />
+      <TypeDescription description={getDescription()}/>
     </section>
   )
 }

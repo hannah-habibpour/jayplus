@@ -16,11 +16,16 @@ function ServiceType() {
 
   const [ serviceType, setserviceType ] = useState("")
 
+  const getDescription = () => {
+    const matchingType = serviceTypes.types.find(t => t.name === serviceType);
+    return matchingType ? matchingType.description : "No description found.";
+  }
+
   return (
     <section id="service-type">
       <h3>Service Type</h3>
       <TypeList types={serviceTypes} select={(type) => setserviceType(type)} />
-      <TypeDescription />
+      <TypeDescription description={getDescription()}/>
     </section>
   )
 }
