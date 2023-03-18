@@ -3,7 +3,11 @@ import BookingContext from "../../../context/BookingContext"
 
 function TimeSlotButtonList({ date, timesSlotList }) {
 
-  const {dateTimeSelected, handleChange} = useContext(BookingContext)
+  const { dateTimeSelected, setDateTimeSelected } = useContext(BookingContext)
+
+  const handleChange = (e) => {
+    setDateTimeSelected(e.currentTarget.value)
+  }
 
   return (
     <div>

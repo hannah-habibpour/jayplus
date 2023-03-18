@@ -4,16 +4,18 @@ const BookingContext = createContext()
 
 export const BookingProvider = ({ children }) => {
     
+    const [ vehicleTypeSelected, setVehicleTypeSelected ] = useState("")
+    const [ serviceTypeSelected, setServiceTypeSelected ] = useState("")
     const [ dateTimeSelected, setDateTimeSelected ] = useState("")
-    
-    const handleChange = (e) => {
-        setDateTimeSelected(e.currentTarget.value)
-    }
 
     return (
         <BookingContext.Provider value={{
+            vehicleTypeSelected,
+            serviceTypeSelected,
             dateTimeSelected,
-            handleChange
+            setVehicleTypeSelected,
+            setServiceTypeSelected,
+            setDateTimeSelected,
         }}>
             { children }
         </BookingContext.Provider>

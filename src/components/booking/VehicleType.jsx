@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useContext } from "react"
 import TypeList from "./shared/TypeList"
 import TypeDescription from "./shared/TypeDescription"
+import BookingContext from "../../context/BookingContext"
 
 function VehicleType() {
   
@@ -13,10 +14,10 @@ function VehicleType() {
     {id : "Motorcycle", name: "Motorcycle", description: "Any motorcycle"}]
   }
 
-  const [ vehicleType, setvehicleType ] = useState("")
+  const { vehicleTypeSelected, setVehicleTypeSelected } = useContext(BookingContext)
 
   const getDescription = () => {
-    const matchingType = vehicleTypes.types.find(t => t.name === vehicleType);
+    const matchingType = vehicleTypes.types.find(t => t.name === vehicleTypeSelected);
     return matchingType ? matchingType.description : "No description found.";
   }
 
@@ -26,7 +27,7 @@ function VehicleType() {
       <TypeList 
         types={vehicleTypes}
         select={(type) => {
-          setvehicleType(type)
+          setVehicleTypeSelected(type)
         }} />
       <TypeDescription description={getDescription()}/>
     </section>

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import Button from "../../shared/all/Button"
-
 
 function TypeList({ types, select }) {
 
