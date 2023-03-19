@@ -35,3 +35,10 @@ export const calculatePrice = (vehicleType, serviceType) => {
         return 0
     }
 }
+
+export const todaysDate = () => {
+    const today = new Date();
+    return (`${today.getFullYear()}-${
+        (today.getMonth() + 1).toString().padStart(2, '0')}-${
+            today.getDate().toString().padStart(2, '0')}`)
+}
