@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { todaysDate, addDaysToDate } from "../../../utilities/utils"
+import { addDaysToDate } from "../../../utilities/utils"
 import UpdateDayButton from "./UpdateDayButton"
 import DayColumnList from "./DayColumnList"
 
