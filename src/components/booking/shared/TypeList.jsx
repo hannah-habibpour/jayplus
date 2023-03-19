@@ -1,13 +1,21 @@
-import { useState } from 'react'
+import { useState, useContext } from "react"
+import BookingContext from "../../../context/BookingContext"
+
+import { calculatePrice } from "../../../utilities/utils"
 
 function TypeList({ types, select }) {
 
   const [ selected, setSelected ] = useState(types.types[0].name)
   select(selected)
   
+  const { setTotalPrice, vehicleTypeSelected, serviceTypeSelected } = useContext(BookingContext)
+  
+  setTotalPrice(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
+  
   const handleChange = (e) => {
     setSelected(e.currentTarget.value)
     select(e.currentTarget.value)
+    setTotalPrice(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
   }
 
   return (
