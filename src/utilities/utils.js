@@ -43,9 +43,34 @@ export const todaysDate = () => {
             today.getDate().toString().padStart(2, '0')}`)
 }
 
-// Make a function to get the next day
 export const calculateDate = (day, by) => {
     return (`2023-01-${+day.slice(Math.max(day.length - 2, 1)) + by}` || todaysDate())
+}
+
+export const getVehicleTypes = () => {
+    return (
+        {
+            name : "vehicle-types",
+            types: [
+            {id : "Sedan", name: "Sedan", description: "Any 5-seater sedan, any hatchback, any two or mini car"},
+            {id : "SUV", name: "SUV", description: "Any 5 seater SUV"}, 
+            {id : "Large-SUV-Truck", name: "Large SUV / Truck", description: "Any 6, 7, or 8 seater, minivan or van, pickup truck"},
+            {id : "Motorcycle", name: "Motorcycle", description: "Any motorcycle"}]
+        }
+    )
+}
+
+export const getServiceTypes = () => {
+    return (
+        {
+            name : "service-types",
+            types: [
+            {id : "Show-Room", name: "Show Room", description: "\n<div class=\"grid grid-cols-2 gap-3\">\n    <ul class=\"list-disc list-inside\">\n        <li>Complete Interior Fine Detail with Shampoo</li>\n        <li>Full Steam Cleaning on the Dashboard</li>\n        <li>Full Steam Cleaning on seats and Floor</li>\n        <li>Vacuum (Including Trunk Compartment)</li>\n        <li>Detail all Panels, Surfaces & Compartments, etc.</li>\n        <li>Shampoo Clean all Carpeted Areas (Cloth Seats Included)</li>\n        <li>Shampoo Clean Leather Seats</li>\n        <li>Leather Conditioner if you have leather</li>\n        <li>Remove all Salt Stains</li>\n        <li>Interior Polish on Dashboard, Doors, and Leather Seats</li>\n        <li>Remove & Wash all Rubber Mats / Shampoo & Extract all Carpeted Mats</li>\n        <li>Interior Shine on Dashboard, Doors, and Leather Seats</li>\n    </ul>\n    <ul class=\"list-disc list-inside\">\n        <li>Apply Odor Eliminator</li>\n        <li>Final Inspection & Touch Up’s</li>\n        <li>Meticulous Foam & Hand Wash</li>\n        <li>Full Body Wax</li>\n        <li>Remove Brake Dust from Wheels, Clean & Dress Tires</li>\n        <li>Full Wax on Tires</li>\n        <li>Power Wash & Clean Wheel Wells</li>\n        <li>Shampoo Clean and Dress Engine</li>\n        <li>Air Dry Entire Vehicle</li>\n        <li>Clean Exterior and Interior Glass</li>\n        <li>Wipe Down Door Jams</li>\n    </ul>\n</div>"},
+            {id : "Basic", name: "Basic", description: "\n<div class=\"grid grid-cols-2 gap-3\">\n    <ul class=\"list-disc list-inside\">\n        <li>Vacuum (Including Trunk Compartment)</li>\n        <li>Remove & Wash all Rubber Mats</li>\n        <li>Wipe All Over The dashboard</li>\n    </ul>\n    <ul class=\"list-disc list-inside\">\n        <li>Power Wash Body and Windows</li>\n        <li>Power Wash & Clean Wheel Wells</li>\n    </ul>\n</div>"},
+            {id : "Interior", name: "Interior", description: "\n<div class=\"grid grid-cols-2 gap-3\">\n    <ul class=\"list-disc list-inside\">\n        <li>Complete Interior Fine Detail with Shampoo</li>\n        <li>Full Steam Cleaning on the Dashboard</li>\n        <li>Full Steam Cleaning on seats and Floor</li>\n        <li>Vacuum (Including Trunk Compartment)</li>\n        <li>Detail all Panels, Surfaces & Compartments, etc.</li>\n        <li>Shampoo Clean all Carpeted Areas (Cloth Seats Included)</li>\n        <li>Shampoo Clean Leather Seats</li>\n    </ul>\n    <ul class=\"list-disc list-inside\">\n        <li>Leather Conditioner</li>\n        <li>Remove all Salt Stains</li>\n        <li>Interior Polish on Dashboard, Doors, and Leather Seats</li>\n        <li>Remove & Wash all Rubber Mats / Shampoo & Extract all Carpeted Mats</li>\n        <li>Interior Shine on Dashboard, Doors, and Leather Seats</li>\n        <li>Apply Odor Eliminator</li>\n        <li>Final Inspection & Touch Up</li>\n    </ul>\n</div>"},
+            {id : "Exterior", name: "Exterior", description: "\n<div class=\"grid grid-cols-2 gap-3\">\n    <ul class=\"list-disc list-inside\">\n        <li>Meticulous Foam & Hand Wash</li>\n        <li>Remove Brake Dust from Wheels, Clean & Dress Tires</li>\n        <li>Power Wash & Clean Wheel Wells</li>\n    </ul>\n    <ul class=\"list-disc list-inside\">\n        <li>Shampoo Clean and Dress Engine</li>\n        <li>Air Dry Entire Vehicle</li>\n        <li>Clean Windows</li>\n        <li>Wipe Down Door Jams</li>\n    </ul>\n</div>"}]
+        }
+    )
 }
 
 export const getDateTimeList = (startDate) => {
@@ -1046,4 +1071,4 @@ export const getDateTimeList = (startDate) => {
     } else if (startDate === "2023-01-22") {
         return dateTimeList22
     }
-  }
+}
