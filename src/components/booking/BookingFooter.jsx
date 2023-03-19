@@ -4,12 +4,14 @@ import BookingContext from "../../context/BookingContext"
 import Button from "../shared/all/Button"
 
 function BookingFooter() {
-  const { totalPrice } = useContext(BookingContext)
+  const { totalPrice, vehicleTypeSelected, serviceTypeSelected, dateTimeSelected } = useContext(BookingContext)
 
+  const isDisabled = (dateTimeSelected === "" || vehicleTypeSelected === "" || serviceTypeSelected === "")
+  
   return (
     <section id="booking-footer">
       <div>price: ${totalPrice}</div>
-      <Button>Payment</Button>
+        <Button to="/payment" disabled={isDisabled}>Payment</Button>
     </section>
   )
 }

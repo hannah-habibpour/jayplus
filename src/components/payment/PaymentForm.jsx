@@ -43,8 +43,8 @@ function PaymentForm() {
           </div>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <Button>Cancel</Button>
-          <Button>Pay 30 $</Button>
+          <Button to="/">Cancel</Button>
+          <Button to="/payment-success">Pay 30 $</Button>
         </div>
       </form>
 

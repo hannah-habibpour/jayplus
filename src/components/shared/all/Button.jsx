@@ -1,8 +1,12 @@
-function Button({ children }) {
+import { Link } from "react-router-dom"
+
+function Button({ to, children, disabled }) {
   return (
-    <button className="bg-gray-500 hover:bg-gray-700 text-white px-2 rounded">
+    <Link to={to} >
+      <button className={`bg-gray-500 hover:bg-gray-700 text-white px-2 rounded ${disabled ? "opacity-50 cursor-not-allowed" : ""}`} disabled={disabled}>
         {children}
-    </button>
+      </button>
+    </Link>
   )
 }
 
