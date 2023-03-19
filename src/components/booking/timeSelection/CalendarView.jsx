@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { addDaysToDate, todaysDate } from "../../../utilities/utils"
+import { addDaysToDate, todaysDate, dateToNumber } from "../../../utilities/utils"
 import UpdateDayButton from "./UpdateDayButton"
 import DayColumnList from "./DayColumnList"
 
@@ -11,7 +11,7 @@ function CalendarView() {
     setStartDate(addDaysToDate(startDate, by))
   }
 
-  const isDisabled = startDate === todaysDate()
+  const isDisabled = dateToNumber(startDate) <= dateToNumber(todaysDate())
   
   return (
     <div className="flex w-full justify-between">

@@ -66,6 +66,12 @@ export const addDaysToDate = (inputDate, by) => {
     return year + "-" + month + "-" + day
 }
 
+export const dateToNumber = (inputDate) => {
+    const [year, month, day] = inputDate.split("-").map(Number)
+    const date = new Date(year, month - 1, day)
+    return +(date.toISOString().slice(0, 10).replace(/-/g, ""))
+}
+
 export const getVehicleTypes = () => {
     return (
         {
