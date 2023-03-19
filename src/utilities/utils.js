@@ -62,7 +62,7 @@ export const addDaysToDate = (inputDate, by) => {
     day = ("0" + date.getDate()).slice(-2)
   
     return year + "-" + month + "-" + day
-  }
+}
 
 export const getVehicleTypes = () => {
     return (
