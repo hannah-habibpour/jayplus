@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { addDaysToDate } from "../../../utilities/utils"
+import { addDaysToDate, todaysDate } from "../../../utilities/utils"
 import UpdateDayButton from "./UpdateDayButton"
 import DayColumnList from "./DayColumnList"
 
@@ -10,11 +10,13 @@ function CalendarView() {
   const changeDate = (by) => {
     setStartDate(addDaysToDate(startDate, by))
   }
+
+  const isDisabled = startDate === todaysDate()
   
   return (
     <div className="flex w-full justify-between">
       <div>
-        <UpdateDayButton children='<<' changeDate={changeDate} />
+        <UpdateDayButton children='<<' changeDate={changeDate} disabled={isDisabled} />
       </div>
       <DayColumnList startDate={startDate} />
       <div>
