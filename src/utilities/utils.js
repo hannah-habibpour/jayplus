@@ -1089,3 +1089,21 @@ export const getDateTimeList = (startDate) => {
         return dateTimeList22
     }
 }
+
+export const getInvoiceDetails = () => {
+    return (
+        {
+            "Transaction Number": "13",
+            "Bill Number": "37",
+            "Type of Service": "Show Room",
+            "Vehicle Type": "Sedan",
+            "Date": "14 Mar 2023",
+            "Time": "15:00",
+            "Service Cost": "169.00 $",
+            "Discount": "Not Specified",
+            "Total": "169.00 $",
+            "Deposit": "30.00 $",
+            "Remaining": "139.00 $"
+        }
+    )
+}
