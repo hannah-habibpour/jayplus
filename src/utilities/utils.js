@@ -43,9 +43,26 @@ export const todaysDate = () => {
             today.getDate().toString().padStart(2, '0')}`)
 }
 
-export const calculateDate = (day, by) => {
-    return (`2023-01-${+day.slice(Math.max(day.length - 2, 1)) + by}` || todaysDate())
-}
+export const addDaysToDate = (inputDate, by) => {
+    // Parse the input date string into year, month, and day components
+    var parts = inputDate.split("-")
+    var year = parseInt(parts[0], 10)
+    var month = parseInt(parts[1], 10) - 1 // month is 0-indexed
+    var day = parseInt(parts[2], 10)
+  
+    // Creates a new Date object using the year, month, and day components
+    var date = new Date(year, month, day)
+  
+    // Adds the number of days to the date
+    date.setDate(date.getDate() + by)
+  
+    // Converts the date back to the "yyyy-mm-dd" format
+    year = date.getFullYear()
+    month = ("0" + (date.getMonth() + 1)).slice(-2)
+    day = ("0" + date.getDate()).slice(-2)
+  
+    return year + "-" + month + "-" + day
+  }
 
 export const getVehicleTypes = () => {
     return (
