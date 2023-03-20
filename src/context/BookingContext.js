@@ -7,18 +7,18 @@ export const BookingProvider = ({ children }) => {
     const [ vehicleTypeSelected, setVehicleTypeSelected ] = useState("")
     const [ serviceTypeSelected, setServiceTypeSelected ] = useState("")
     const [ dateTimeSelected, setDateTimeSelected ] = useState("")
-    const [ totalPrice, setTotalPrice ] = useState("0")
+    const [ serviceCost, setServiceCost ] = useState("0")
 
     return (
         <BookingContext.Provider value={{
             vehicleTypeSelected,
             serviceTypeSelected,
             dateTimeSelected,
-            totalPrice,
+            serviceCost,
             setVehicleTypeSelected,
             setServiceTypeSelected,
             setDateTimeSelected,
-            setTotalPrice
+            setServiceCost
         }}>
             { children }
         </BookingContext.Provider>
@@ -26,8 +26,3 @@ export const BookingProvider = ({ children }) => {
 }
 
 export default BookingContext
-
-
-// const calculatePrice = ({}) => {
-//     return 150
-// }

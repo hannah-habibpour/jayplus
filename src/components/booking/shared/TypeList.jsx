@@ -8,14 +8,14 @@ function TypeList({ types, select }) {
   const [ selected, setSelected ] = useState(types.types[0].name)
   select(selected)
   
-  const { vehicleTypeSelected, serviceTypeSelected, setTotalPrice, setDateTimeSelected } = useContext(BookingContext)
+  const { vehicleTypeSelected, serviceTypeSelected, setServiceCost, setDateTimeSelected } = useContext(BookingContext)
   
-  setTotalPrice(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
+  setServiceCost(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
   
   const handleChange = (e) => {
     setSelected(e.currentTarget.value)
     select(e.currentTarget.value)
-    setTotalPrice(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
+    setServiceCost(calculatePrice(vehicleTypeSelected, serviceTypeSelected))
     setDateTimeSelected("")
   }
 

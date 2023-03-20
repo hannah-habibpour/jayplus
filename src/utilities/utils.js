@@ -1098,7 +1098,7 @@ export const getDateTimeList = (startDate) => {
     }
 }
 
-export const getInvoiceDetails = () => {
+export const getInvoiceDetails = (vehicleTypeSelected, serviceTypeSelected, dateTimeSelected) => {
     return (
         {
             "Transaction Number": "13",
