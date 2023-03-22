@@ -12,7 +12,7 @@ function BookingFooter() {
     <section id="booking-footer">
       <div>price: ${serviceCost}</div>
         <Button to="/payment" disabled={isDisabled}>Payment</Button>
-    </section>
+    </section> 
   )
 }
 
