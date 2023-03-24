@@ -17,9 +17,12 @@ function ServiceType() {
 
   return (
     <section id="service-type">
+      <div className="w-full">
       <h3>Service Type</h3>
       <TypeList types={serviceTypes} select={(type) => setServiceTypeSelected(type)} />
       <TypeDescription description={getDescription()}/>
+
+      </div>
     </section>
   )
 }

@@ -20,11 +20,11 @@ function TypeList({ types, select }) {
   }
 
   return (
-    <div id="type-list" className="flex gap-4">
-        <ul className='flex gap-4'>
+    <div id="type-list" className="items-center justify-between">
+        <ul className="flex gap-4">
           {types.types.map( type => (
-            <li key={ type.id }>
-              <input type="radio" id={type.id} name={types.name} value={type.name} onChange={handleChange} checked={ selected ===  type.name } />
+            <li className="border-2 w-1/4 text-center" key={ type.id }>
+              <input className="" type="radio" id={type.id} name={types.name} value={type.name} onChange={handleChange} checked={ selected ===  type.name } />
               <label htmlFor={type.id}>{type.name}</label>
             </li>
           ))}

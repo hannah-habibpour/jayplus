@@ -14,7 +14,7 @@ function CalendarView() {
   const isDisabled = dateToNumber(startDate) <= dateToNumber(todaysDate())
   
   return (
-    <div className="flex w-full justify-between">
+    <div className="flex w-full justify-between gap-2">
       <div>
         <UpdateDayButton children='<<' changeDate={changeDate} disabled={isDisabled} />
       </div>

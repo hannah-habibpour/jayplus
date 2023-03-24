@@ -17,6 +17,8 @@ function VehicleType() {
 
   return (
     <section id="vehicle-type">
+      <div className="w-full">
+
       <h3>Vehicle Type</h3>
       <TypeList 
         types={vehicleTypes}
@@ -24,6 +26,7 @@ function VehicleType() {
           setVehicleTypeSelected(type)
         }} />
       <TypeDescription description={getDescription()}/>
+      </div>
     </section>
   )
 }
