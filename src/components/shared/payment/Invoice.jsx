@@ -5,7 +5,7 @@ function Invoice({ invoiceDetails }) {
   return (
     <section id="invoice">
       <div className="invoice-card">
-        <table className="">
+        <table className="w-full">
           <tbody>
             {Object.entries(invoiceDetails).map(([key, value]) => (
               <tr key={key}>
