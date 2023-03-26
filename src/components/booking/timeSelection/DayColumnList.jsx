@@ -7,7 +7,7 @@ function DayColumnList({ startDate }) {
   let dateTimeList = getDateTimeList(startDate)
 
   return (
-    <div className="grid grid-cols-3 gap-2 w-full justify-between text-center">  
+    <div className="grid grid-cols-3 gap-4 w-full justify-between text-center">  
         {Object.entries(dateTimeList).map(([key, value]) => (
             <DayColumn key={key} date={key} timeSlotList={value} />
         ))}

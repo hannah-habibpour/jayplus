@@ -10,10 +10,10 @@ function TimeSlotButtonList({ date, timesSlotList }) {
   }
 
   return (
-    <div>
+    <div id="time-list">
       <ul>
         {timesSlotList.map( time => (
-          <li key={date + time.start}>
+          <li key={date + time.start} className="mb-4">
             <input type="radio" id={date + time.start} name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ dateTimeSelected === date + time.start} />
             <label htmlFor={date + time.start}>{time.start}</label>
           </li>

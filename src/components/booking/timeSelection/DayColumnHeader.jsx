@@ -2,7 +2,7 @@ import React from 'react'
 
 function DayColumnHeader({date}) {
   return (
-    <div>{date}</div>
+    <div id="date-header" className="mb-4">{date}</div>
   )
 }
 
