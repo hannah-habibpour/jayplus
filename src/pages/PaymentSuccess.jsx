@@ -14,12 +14,10 @@ function PaymentSuccess() {
   const invoiceDetails = getInvoiceDetails(vehicleTypeSelected, serviceTypeSelected, dateTimeSelected)
 
   return (
-    <div id="payment-success-page" className=" flex flex-col items-center">
-
+    <div id="payment-success-page" className="flex flex-col items-center">
       <PaymentSuccessHeader />
       <Invoice invoiceDetails={invoiceDetails}/>
       <PaymentSuccessFooter />
-      
     </div>
   )
 }

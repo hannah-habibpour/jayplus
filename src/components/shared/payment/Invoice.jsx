@@ -5,11 +5,11 @@ function Invoice({ invoiceDetails }) {
   const cardStyle = {
     background: "#E9ECEF",
     padding: "15px 20px",
-    borderRadius: "5px"
+    borderRadius: "5px",
   }
 
   return (
-    <section id="invoice">
+    <section id="invoice" className="w-full">
       <div className="invoice-card" style={cardStyle}>
         <table className="w-full">
           <tbody>
