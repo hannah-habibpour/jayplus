@@ -7,7 +7,7 @@ function DayColumnHeader({date}) {
     background: "#CED4DA",
     padding: "10px",
     borderRadius: "5px",
-    fontSize: "19px",
+    fontSize: "14px",
     border: "0px #eee solid",
     transition: "0.3s"
   }
