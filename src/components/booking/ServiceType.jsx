@@ -12,7 +12,7 @@ function ServiceType() {
 
   const getDescription = () => {
     const matchingType = serviceTypes.types.find(t => t.name === serviceTypeSelected);
-    return matchingType ? matchingType.description : "No description found.";
+    return matchingType ? matchingType.description() : "No description found.";
   }
 
   return (

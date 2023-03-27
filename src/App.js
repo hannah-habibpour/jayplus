@@ -9,7 +9,7 @@ function App() {
   return (
     <BookingProvider>
       <Router>
-        <main>
+        <main style={{padding: "20px"}}>
             <Routes>
               <Route path='/' element={<Booking />} />
               <Route path='/payment' element={<Payment />} />
