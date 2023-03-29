@@ -8,11 +8,15 @@ function BookingFooter() {
 
   const isDisabled = (dateTimeSelected === "" || vehicleTypeSelected === "" || serviceTypeSelected === "")
   
+  const buttonStyle = {
+    width: "280px",
+    height: "43px",
+  }
   return (
     <section id="booking-footer">
       <div className="flex flex-col items-center justify-center">
-      <div className="">price: ${serviceCost}</div>
-        <Button to="/payment" disabled={isDisabled}>Payment</Button>
+        <div className="">price: ${serviceCost}</div>
+        <Button to="/payment" disabled={isDisabled} type="largeFixedWidthActiveButtonLight">Payment</Button>
       </div>
     </section> 
     // flex justify-center items-center

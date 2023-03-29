@@ -7,7 +7,7 @@ function UpdateDayButton({ children, type, changeDate, disabled }) {
   }
   
   const buttonStyle = {
-    background: process.env.REACT_APP_ACTIVE_ACTION_BUTTON_COLOR,
+    background: process.env.REACT_APP_ACTIVE_ACTION_BUTTON_COLOR_DARK,
     height: "50px",
     width: "25px",
     padding: "0px"

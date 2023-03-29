@@ -42,9 +42,9 @@ function PaymentForm() {
             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nameOnCard" type="text" placeholder="Enter the name on your card" />
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2">
-          <Button to="/">Cancel</Button>
-          <Button to="/payment-success">Pay 30 $</Button>
+        <div className="flex items-center justify-center gap-2 paymentbuttons">
+          <Button to="/" type="halfWidthActiveButtonDark">Cancel</Button>
+          <Button to="/payment-success" type="halfWidthActiveButtonLight">Pay 30 $</Button>
         </div>
       </form>
 
