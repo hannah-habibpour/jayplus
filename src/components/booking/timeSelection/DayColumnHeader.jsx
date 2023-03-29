@@ -3,17 +3,15 @@ import React from 'react'
 function DayColumnHeader({date}) {
   
   const headerStyle = {
-    position: "relative",
-    background: "#CED4DA",
-    padding: "10px",
+    background: process.env.REACT_APP_ACTIVE_ACTION_BUTTON_COLOR,
+    height: "50px",
     borderRadius: "5px",
     fontSize: "14px",
     border: "0px #eee solid",
-    transition: "0.3s"
   }
   
   return (
-    <div id="date-header" className="mb-4" style={headerStyle}>{date}</div>
+    <div id="date-header" className="mb-4 flex justify-center items-center" style={headerStyle}>{date}</div>
   )
 }
 

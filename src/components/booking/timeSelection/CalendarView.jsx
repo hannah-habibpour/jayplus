@@ -16,11 +16,15 @@ function CalendarView() {
   return (
     <div className="flex w-full justify-between gap-2">
       <div>
-        <UpdateDayButton children='<<' changeDate={changeDate} disabled={isDisabled} />
+        <UpdateDayButton type="backward" changeDate={changeDate} disabled={isDisabled}>
+          <img src="backward.svg" alt="" />
+        </UpdateDayButton>
       </div>
       <DayColumnList startDate={startDate} />
       <div>
-        <UpdateDayButton children='>>' changeDate={changeDate} />
+      <UpdateDayButton type="forward" changeDate={changeDate}>
+        <img src="forward.svg" alt="" /> 
+      </UpdateDayButton>
       </div>
     </div>
   )
