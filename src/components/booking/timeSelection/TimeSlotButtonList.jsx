@@ -13,7 +13,7 @@ function TimeSlotButtonList({ date, timesSlotList }) {
 
   const liStyle = {
     position: "relative",
-    background: process.env.REACT_APP_INACTIVE_INPUT_BUTTON_COLOR,
+    background: process.env.REACT_APP_CANELDAR_TIMESLOT_BUTTON_COLOR,
     height: "80px",
     padding: "10px",
     borderRadius: "5px",
@@ -44,13 +44,47 @@ function TimeSlotButtonList({ date, timesSlotList }) {
     cursor: "pointer"
   }
 
+  const liDisabledStyle = {
+    position: "relative",
+    background: process.env.REACT_APP_INACTIVE_CANELDAR_TIMESLOT_BUTTON_COLOR,
+    height: "80px",
+    padding: "10px",
+    borderRadius: "5px",
+    fontSize: "14px",
+    border: "0px #eee solid",
+    transition: "0.3s",
+  }
+
+  const labelDisabledStyle = {
+    opacity: "50%",
+    background: process.env.REACT_APP_INACTIVE_CANELDAR_TIMESLOT_BUTTON_COLOR,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    width: "100%",
+    height: "80px",
+    borderRadius: "5px",
+    transform: "translate(-50%, -50%)",
+    cursor: "not-allowed",
+  }
+
   return (
     <div id="time-list">
       <ul>
         {timesSlotList.map( time => (
-          <li key={date + time.start} className="mb-4" style={isHovered === date + time.start ? liHoveredStyle : liStyle} onMouseEnter={() => setIshovered(date + time.start)} onMouseLeave={() => setIshovered(null)}>
-            <input type="radio" id={date + time.start} className="hidden" name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ dateTimeSelected === date + time.start} />
-            <label htmlFor={date + time.start} className="flex flex-col items-center justify-center" style={labelStyle}>{time.start}</label>
+          <li 
+            key={date + time.start}
+            className="mb-4"
+            style={
+              !time.isPast
+              ? liDisabledStyle
+              : isHovered === date + time.start 
+              ? liHoveredStyle
+              : liStyle}
+            onMouseEnter={() => setIshovered(date + time.start)}
+            onMouseLeave={() => setIshovered(null)}>
+            <input type="radio" id={date + time.start} className="hidden" name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ dateTimeSelected === date + time.start}/>
+            <label htmlFor={date + time.start} className="flex flex-col items-center justify-center" style={!time.isPast ? labelDisabledStyle : labelStyle} onClick={!time.isPast ? e => e.preventDefault() : null}>{time.start}</label>
           </li>
         ))}
       </ul>

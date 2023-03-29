@@ -208,21 +208,21 @@ export const getDateTimeList = (startDate) => {
                 "end": "10:00",
                 "freeMinutes": 270,
                 "available": false,
-                "isPast": true
+                "isPast": false
             },
             {
                 "start": "10:00",
                 "end": "11:00",
                 "freeMinutes": 270,
                 "available": false,
-                "isPast": true
+                "isPast": false
             },
             {
                 "start": "11:00",
                 "end": "12:00",
                 "freeMinutes": 270,
                 "available": false,
-                "isPast": true
+                "isPast": false
             },
             {
                 "start": "12:00",

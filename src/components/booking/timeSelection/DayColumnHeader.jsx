@@ -3,7 +3,7 @@ import React from 'react'
 function DayColumnHeader({date}) {
   
   const headerStyle = {
-    background: process.env.REACT_APP_ACTIVE_ACTION_BUTTON_COLOR_DARK,
+    background: process.env.REACT_APP_CANELDAR_HEADER_COLOR,
     height: "50px",
     borderRadius: "5px",
     fontSize: "14px",
