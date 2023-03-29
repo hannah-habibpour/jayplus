@@ -86,7 +86,7 @@ function TimeSlotButtonList({ date, timesSlotList }) {
             <input 
               type="radio"
               id={date + time.start} 
-              lassName="hidden"
+              className="hidden"
               name="timeSlot"
               value={date + time.start}
               onChange={ handleChange }
