@@ -16,7 +16,7 @@ function TypeList({ types, select }) {
     height: "80px",
     padding: "10px",
     borderRadius: "5px",
-    fontSize: "14px",
+    fontSize: "13px", // Change this later to a bit larger
     border: "0px #eee solid",
     transition: "0.3s",
   }

@@ -7,6 +7,7 @@ function TypeDescription({ description }) {
     borderWidth: "1px",
     borderRadius: "5px",
     padding: "15px",
+    fontSize: "13px",
   }
   return (
     <div className="mt-2" style={descriptionStyle}>{description}</div>

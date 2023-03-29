@@ -14,10 +14,10 @@ function TimeSlotButtonList({ date, timesSlotList }) {
   const liStyle = {
     position: "relative",
     background: process.env.REACT_APP_CANELDAR_TIMESLOT_BUTTON_COLOR,
-    height: "80px",
+    height: "50px",
     padding: "10px",
     borderRadius: "5px",
-    fontSize: "14px",
+    fontSize: "13px",
     border: "0px #eee solid",
     transition: "0.3s",
   }
@@ -25,10 +25,10 @@ function TimeSlotButtonList({ date, timesSlotList }) {
   const liHoveredStyle = {
     position: "relative",
     background: process.env.REACT_APP_ACTIVE_INPUT_BUTTON_COLOR,
-    height: "80px",
+    height: "50px",
     padding: "10px",
     borderRadius: "5px",
-    fontSize: "14px",
+    fontSize: "13px",
     border: "0px #eee solid",
     transition: "0.3s",
   }
@@ -38,7 +38,7 @@ function TimeSlotButtonList({ date, timesSlotList }) {
     top: "50%",
     left: "50%",
     width: "100%",
-    height: "80px",
+    height: "50px",
     borderRadius: "5px",
     transform: "translate(-50%, -50%)",
     cursor: "pointer"
@@ -47,10 +47,10 @@ function TimeSlotButtonList({ date, timesSlotList }) {
   const liDisabledStyle = {
     position: "relative",
     background: process.env.REACT_APP_INACTIVE_CANELDAR_TIMESLOT_BUTTON_COLOR,
-    height: "80px",
+    height: "50px",
     padding: "10px",
     borderRadius: "5px",
-    fontSize: "14px",
+    fontSize: "13px",
     border: "0px #eee solid",
     transition: "0.3s",
   }
@@ -62,7 +62,7 @@ function TimeSlotButtonList({ date, timesSlotList }) {
     top: "50%",
     left: "50%",
     width: "100%",
-    height: "80px",
+    height: "50px",
     borderRadius: "5px",
     transform: "translate(-50%, -50%)",
     cursor: "not-allowed",
