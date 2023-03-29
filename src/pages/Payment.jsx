@@ -14,7 +14,7 @@ function Payment() {
   return (
     <div id="payment-page">
       <Invoice invoiceDetails={invoiceDetails} />
-      <PaymentForm />
+      <PaymentForm price={invoiceDetails.Deposit}/>
     </div>
   )
 }

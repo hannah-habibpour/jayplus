@@ -14,7 +14,7 @@ function CalendarView() {
   const isDisabled = dateToNumber(startDate) <= dateToNumber(todaysDate())
   
   return (
-    <div className="flex w-full justify-between gap-2">
+    <div className="flex w-full justify-between gap-2 mt-2">
       <div>
         <UpdateDayButton type="backward" changeDate={changeDate} disabled={isDisabled}>
           <img src="backward.svg" alt="" />

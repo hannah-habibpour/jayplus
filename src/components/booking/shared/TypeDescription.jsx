@@ -4,12 +4,12 @@ function TypeDescription({ description }) {
     background: process.env.REACT_APP_DESCRIPTION_CARD_BACKGROUND_COLOR,
     borderStyle: "solid",
     borderColor: process.env.REACT_APP_DESCRIPTION_CARD_BORDER_COLOR,
-    borderWidth: "2px",
+    borderWidth: "1px",
     borderRadius: "5px",
     padding: "15px",
   }
   return (
-    <div style={descriptionStyle}>{description}</div>
+    <div className="mt-2" style={descriptionStyle}>{description}</div>
   )
 }
 

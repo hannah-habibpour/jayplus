@@ -56,7 +56,7 @@ function TypeList({ types, select }) {
 
 
   return (
-    <div id="type-list" className="items-center justify-between" >
+    <div id="type-list" className="items-center justify-between mt-2">
         <ul className="flex gap-2">
           {types.types.map( type => (
             <li className="border-2 w-1/4 text-center" key={ type.id } style={isHovered === type.id ? liHoveredStyle : liStyle} onMouseEnter={() => setIshovered(type.id)} onMouseLeave={() => setIshovered(null)}>

@@ -20,7 +20,7 @@ function VehicleType() {
       <div className="w-full">
 
       <h3>Vehicle Type</h3>
-      <TypeList 
+      <TypeList
         types={vehicleTypes}
         select={(type) => {
           setVehicleTypeSelected(type)

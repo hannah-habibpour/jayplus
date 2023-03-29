@@ -15,11 +15,10 @@ function BookingFooter() {
   return (
     <section id="booking-footer">
       <div className="flex flex-col items-center justify-center">
-        <div className="">price: ${serviceCost}</div>
+        <div className="mb-4 mt-2 text-lg">Price: <span className="font-bold">${serviceCost}</span></div>
         <Button to="/payment" disabled={isDisabled} type="largeFixedWidthActiveButtonLight">Payment</Button>
       </div>
-    </section> 
-    // flex justify-center items-center
+    </section>
   )
 }
 
