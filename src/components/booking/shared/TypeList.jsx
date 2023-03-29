@@ -59,11 +59,29 @@ function TypeList({ types, select }) {
     <div id="type-list" className="items-center justify-between mt-2">
         <ul className="flex gap-2">
           {types.types.map( type => (
-            <li className="border-2 w-1/4 text-center" key={ type.id } style={isHovered === type.id ? liHoveredStyle : liStyle} onMouseEnter={() => setIshovered(type.id)} onMouseLeave={() => setIshovered(null)}>
-              <input className="hidden" type="radio" id={type.id} name={types.name} value={type.name} onChange={handleChange} checked={ selected ===  type.name } />
-              <label htmlFor={type.id} className="flex flex-col items-center justify-center" style={labelStyle}>
-                <img src={type.icon} alt="" />
-                <span>{type.name}</span>
+            <li 
+              className="border-2 w-1/4 text-center"
+              key={ type.id }
+              style={isHovered === type.id ? liHoveredStyle : liStyle}
+              onMouseEnter={() => setIshovered(type.id)}
+              onMouseLeave={() => setIshovered(null)}>
+              <input
+                className="hidden"
+                type="radio" id={type.id}
+                name={types.name}
+                value={type.name}
+                onChange={handleChange}
+                checked={ selected ===  type.name } />
+              <label 
+                htmlFor={type.id}
+                className="flex flex-col items-center justify-center"
+                style={labelStyle}>
+                <img 
+                  src={type.icon}
+                  alt="" />
+
+                {/* Change this to something more sustainable */}
+                <span style={{ fontSize: type.name === "Large SUV / Truck" && "10px" }}>{type.name}</span>
               </label>
             </li>
           ))}

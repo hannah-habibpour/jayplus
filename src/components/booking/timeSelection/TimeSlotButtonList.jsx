@@ -83,8 +83,21 @@ function TimeSlotButtonList({ date, timesSlotList }) {
               : liStyle}
             onMouseEnter={() => setIshovered(date + time.start)}
             onMouseLeave={() => setIshovered(null)}>
-            <input type="radio" id={date + time.start} className="hidden" name="timeSlot" value={date + time.start} onChange={ handleChange } checked={ dateTimeSelected === date + time.start}/>
-            <label htmlFor={date + time.start} className="flex flex-col items-center justify-center" style={!time.isPast ? labelDisabledStyle : labelStyle} onClick={!time.isPast ? e => e.preventDefault() : null}>{time.start}</label>
+            <input 
+              type="radio"
+              id={date + time.start} 
+              lassName="hidden"
+              name="timeSlot"
+              value={date + time.start}
+              onChange={ handleChange }
+              checked={ dateTimeSelected === date + time.start}/>
+            <label
+              htmlFor={date + time.start}
+              className="flex flex-col items-center justify-center"
+              style={!time.isPast ? labelDisabledStyle : labelStyle}
+              onClick={!time.isPast ? e => e.preventDefault() : null}>
+              {time.start}
+            </label>
           </li>
         ))}
       </ul>
